@@ -1,5 +1,4 @@
 # HT6022_OSX
-==============
 
 A very quickly-done HT6022 user interface for the OSX.
 
