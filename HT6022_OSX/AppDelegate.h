@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  HT6022_OSX
+//  ht6022
 //
-//  Created by Serge on 2014-07-15.
-//
+//  Created by Serge on 2014-07-04.
+//  Copyright (c) 2014 SergeOkon. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

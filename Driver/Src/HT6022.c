@@ -270,7 +270,7 @@ HT6022_ErrorTypeDef HT6022_DeviceOpen (HT6022_DeviceTypeDef *Device)
 		return HT6022_ERROR_OTHER;
 	}
 	
-	HT6022_AddressList [Address] = 0x01;	
+	HT6022_AddressList [Address] = 0x01;
 	Device->Address      = Address;
 	Device->DeviceHandle = DeviceHandle;
 

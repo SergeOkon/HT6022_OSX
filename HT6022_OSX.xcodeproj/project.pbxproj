@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9532DCA519763A3A0001279D /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 9532DCA419763A3A0001279D /* Graph.m */; };
+		9532DCAB19763AEF0001279D /* HT6022.c in Sources */ = {isa = PBXBuildFile; fileRef = 9532DCA919763AEF0001279D /* HT6022.c */; };
+		9532DCAC19763AEF0001279D /* HT6022fw.c in Sources */ = {isa = PBXBuildFile; fileRef = 9532DCAA19763AEF0001279D /* HT6022fw.c */; };
 		95C887E11976389A00865187 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C887E01976389A00865187 /* Cocoa.framework */; };
 		95C887EB1976389A00865187 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95C887E91976389A00865187 /* InfoPlist.strings */; };
 		95C887ED1976389A00865187 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C887EC1976389A00865187 /* main.m */; };
@@ -16,6 +19,7 @@
 		95C887F91976389A00865187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C887F81976389A00865187 /* Images.xcassets */; };
 		95C888001976389A00865187 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C887FF1976389A00865187 /* XCTest.framework */; };
 		95C888011976389A00865187 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C887E01976389A00865187 /* Cocoa.framework */; };
+		95FCD1BD19763CF1004CB648 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FCD1BC19763CF1004CB648 /* libusb-1.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9532DCA319763A3A0001279D /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		9532DCA419763A3A0001279D /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		9532DCA719763AEF0001279D /* HT6022.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HT6022.h; path = Driver/Inc/HT6022.h; sourceTree = SOURCE_ROOT; };
+		9532DCA819763AEF0001279D /* HT6022fw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HT6022fw.h; path = Driver/Inc/HT6022fw.h; sourceTree = SOURCE_ROOT; };
+		9532DCA919763AEF0001279D /* HT6022.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HT6022.c; path = Driver/Src/HT6022.c; sourceTree = SOURCE_ROOT; };
+		9532DCAA19763AEF0001279D /* HT6022fw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HT6022fw.c; path = Driver/Src/HT6022fw.c; sourceTree = SOURCE_ROOT; };
+		9532DCAD19763C540001279D /* libusb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libusb.dylib; path = ../../../../usr/local/lib/libusb.dylib; sourceTree = "<group>"; };
 		95C887DD1976389A00865187 /* HT6022_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HT6022_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C887E01976389A00865187 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		95C887E31976389A00865187 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -42,9 +53,10 @@
 		95C887F21976389A00865187 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95C887F31976389A00865187 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		95C887F61976389A00865187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		95C887F81976389A00865187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95C887F81976389A00865187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HT6022_OSX/Images.xcassets; sourceTree = "<group>"; };
 		95C887FE1976389A00865187 /* HT6022_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HT6022_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C887FF1976389A00865187 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		95FCD1BC19763CF1004CB648 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libusb-1.0.a"; path = "../../../../usr/local/lib/libusb-1.0.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C887E11976389A00865187 /* Cocoa.framework in Frameworks */,
+				95FCD1BD19763CF1004CB648 /* libusb-1.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9532DCA619763ACD0001279D /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				9532DCA719763AEF0001279D /* HT6022.h */,
+				9532DCA819763AEF0001279D /* HT6022fw.h */,
+				9532DCA919763AEF0001279D /* HT6022.c */,
+				9532DCAA19763AEF0001279D /* HT6022fw.c */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
 		95C887D41976389A00865187 = {
 			isa = PBXGroup;
 			children = (
 				95C887E61976389A00865187 /* HT6022_OSX */,
 				95C887DF1976389A00865187 /* Frameworks */,
 				95C887DE1976389A00865187 /* Products */,
+				95C887F81976389A00865187 /* Images.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +114,8 @@
 		95C887DF1976389A00865187 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95FCD1BC19763CF1004CB648 /* libusb-1.0.a */,
+				9532DCAD19763C540001279D /* libusb.dylib */,
 				95C887E01976389A00865187 /* Cocoa.framework */,
 				95C887FF1976389A00865187 /* XCTest.framework */,
 				95C887E21976389A00865187 /* Other Frameworks */,
@@ -109,10 +136,12 @@
 		95C887E61976389A00865187 /* HT6022_OSX */ = {
 			isa = PBXGroup;
 			children = (
+				9532DCA619763ACD0001279D /* Driver */,
+				9532DCA319763A3A0001279D /* Graph.h */,
+				9532DCA419763A3A0001279D /* Graph.m */,
 				95C887F21976389A00865187 /* AppDelegate.h */,
 				95C887F31976389A00865187 /* AppDelegate.m */,
 				95C887F51976389A00865187 /* MainMenu.xib */,
-				95C887F81976389A00865187 /* Images.xcassets */,
 				95C887E71976389A00865187 /* Supporting Files */,
 			);
 			path = HT6022_OSX;
@@ -226,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9532DCA519763A3A0001279D /* Graph.m in Sources */,
 				95C887F41976389A00865187 /* AppDelegate.m in Sources */,
+				9532DCAC19763AEF0001279D /* HT6022fw.c in Sources */,
 				95C887ED1976389A00865187 /* main.m in Sources */,
+				9532DCAB19763AEF0001279D /* HT6022.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +311,7 @@
 		95C8880C1976389A00865187 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -308,16 +340,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Debug;
 		};
 		95C8880D1976389A00865187 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -341,8 +375,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Release;
 		};

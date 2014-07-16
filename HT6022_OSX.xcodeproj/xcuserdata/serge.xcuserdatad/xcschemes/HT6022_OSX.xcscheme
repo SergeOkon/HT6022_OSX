@@ -28,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95C887FD1976389A00865187"
-               BuildableName = "HT6022_OSXTests.xctest"
-               BlueprintName = "HT6022_OSXTests"
-               ReferencedContainer = "container:HT6022_OSX.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
