@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1C11E01B-DC55-447C-ABD8-369C843F2EAA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HT6022_OSX</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1086BA80-156A-42EE-8CF0-E257758A80D2</key>
+		<string>https://github.com/sergeokon/HT6022_OSX.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HT6022_OSX.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1086BA80-156A-42EE-8CF0-E257758A80D2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sergeokon/HT6022_OSX.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1086BA80-156A-42EE-8CF0-E257758A80D2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1086BA80-156A-42EE-8CF0-E257758A80D2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HT6022_OSX</string>
+		</dict>
+	</array>
+</dict>
+</plist>
