@@ -286,6 +286,7 @@
             
             // Determine average levels
             NSUInteger sum = 0;
+            if (averages.count < 1) return;
             for (NSUInteger i = 0; i < averages.count; i++) sum += [averages[i] unsignedIntegerValue];
             NSUInteger averageOfAverages = sum / averages.count;
             
@@ -355,6 +356,11 @@
         //
         [self initStep2];
     });
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
 }
 
 -(void)applicationWillTerminate:(NSNotification *)notification
