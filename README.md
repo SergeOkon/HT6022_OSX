@@ -1,10 +1,11 @@
 # HT6022_OSX
 
-A very quickly-done HT6022 user interface for the OSX.
+A quickly-done HT6022 user interface for the OSX.
 
+![UI screenshot](/screenshots/ht6022-1.png "UI screenshot")
 
 ## Features
-- Not much right now!
+- Few and far between at the moment =)
 - It display CH1 and CH2 as yellow / blue graph.
 - Some trigger/offset capability
 - Channel voltage selection
@@ -18,12 +19,13 @@ A very quickly-done HT6022 user interface for the OSX.
 ## Requirements
 - Xcode 5
 - libusb 1.0
-  - I got is view HomeBrew. 
-  - It lives in /usr/local/{include,lib}. This is referenced by the project.
+ - I got it from HomeBrew. 
+ - It lives in /usr/local/{include,lib}. 
+ - This is referenced by the project.
 
 
 ## To run
-- Get libusr
+- Get libusb
 - Plug in the HT6022
 - Open project in Xcode
 - Run.
