@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1077" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="checkTriggerOnDown" destination="WDB-FV-OST" id="xwL-Rh-Bi9"/>
@@ -39,14 +40,13 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="640" height="480"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="1002"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <value key="minSize" type="size" width="640" height="480"/>
-            <value key="maxSize" type="size" width="640" height="480"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BVU-he-TNa">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="BVU-he-TNa">
                         <rect key="frame" x="54" y="445" width="476" height="14"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Status Label" id="p3i-dW-vAZ">
@@ -55,7 +55,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XKZ-c0-wr7">
+                    <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="XKZ-c0-wr7">
                         <rect key="frame" x="547" y="20" width="73" height="86"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -89,11 +89,11 @@
                             <action selector="changeCH2range:" target="Voe-Tx-rLC" id="MPg-lZ-yzJ"/>
                         </connections>
                     </matrix>
-                    <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abR-js-f7A">
+                    <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="abR-js-f7A">
                         <rect key="frame" x="547" y="139" width="73" height="86"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        <size key="cellSize" width="73" height="20"/>
+                        <size key="cellSize" width="60" height="18"/>
                         <size key="intercellSpacing" width="4" height="2"/>
                         <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="BRE-tT-bAz">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -123,11 +123,11 @@
                             <action selector="changeCH1range:" target="Voe-Tx-rLC" id="1RV-y2-yVk"/>
                         </connections>
                     </matrix>
-                    <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmm-Kr-ibK">
-                        <rect key="frame" x="547" y="270" width="73" height="190"/>
+                    <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="rmm-Kr-ibK">
+                        <rect key="frame" x="547" y="273" width="73" height="158"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        <size key="cellSize" width="73" height="22"/>
+                        <size key="cellSize" width="73" height="18"/>
                         <size key="intercellSpacing" width="4" height="2"/>
                         <buttonCell key="prototype" type="radio" title="Hm..." bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="2IR-KC-1nc">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -173,12 +173,12 @@
                             <action selector="changeSampleRate:" target="Voe-Tx-rLC" id="V0Z-yW-1hM"/>
                         </connections>
                     </matrix>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7U-fE-ibY" customClass="Graph">
+                    <customView id="z7U-fE-ibY" customClass="Graph">
                         <rect key="frame" x="56" y="45" width="472" height="393"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wii-a5-0MS">
-                        <rect key="frame" x="564" y="232" width="38" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wii-a5-0MS">
+                        <rect key="frame" x="545" y="232" width="38" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CH1" id="TmQ-s5-bRg">
                             <font key="font" metaFont="system"/>
@@ -186,8 +186,8 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0E6-tZ-mO4">
-                        <rect key="frame" x="564" y="114" width="38" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="0E6-tZ-mO4">
+                        <rect key="frame" x="545" y="114" width="38" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CH2" id="7s2-vI-JYv">
                             <font key="font" metaFont="system"/>
@@ -195,16 +195,16 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXn-ml-ZpF">
-                        <rect key="frame" x="24" y="36" width="27" height="410"/>
+                    <slider identifier="Trigger level" horizontalHuggingPriority="750" id="DXn-ml-ZpF">
+                        <rect key="frame" x="19" y="34" width="27" height="414"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" userInterfaceLayoutDirection="rightToLeft" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="left" numberOfTickMarks="17" allowsTickMarkValuesOnly="YES" sliderType="linear" id="1j1-nT-MKA"/>
+                        <sliderCell key="cell" userInterfaceLayoutDirection="rightToLeft" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" numberOfTickMarks="17" sliderType="linear" id="1j1-nT-MKA"/>
                         <connections>
                             <action selector="moveTriggerLevel:" target="Voe-Tx-rLC" id="07F-oW-ybQ"/>
                         </connections>
                     </slider>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FBI-B4-7SL">
-                        <rect key="frame" x="14" y="437" width="35" height="31"/>
+                    <button id="FBI-B4-7SL">
+                        <rect key="frame" x="534" y="431" width="35" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="↗" bezelStyle="regularSquare" imagePosition="right" alignment="center" state="on" inset="2" id="cJt-Jn-h7C">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -214,8 +214,38 @@
                             <action selector="checkOnUp:" target="Voe-Tx-rLC" id="XJC-12-MH5"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WDB-FV-OST">
-                        <rect key="frame" x="14" y="21" width="35" height="18"/>
+                    <slider toolTip="Trigger Position" verticalHuggingPriority="750" id="MWN-et-Uga">
+                        <rect key="frame" x="52" y="9" width="480" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" numberOfTickMarks="17" sliderType="linear" id="jaL-8j-4Qn"/>
+                        <connections>
+                            <action selector="moveTriggerOffset:" target="Voe-Tx-rLC" id="1iW-1e-NLk"/>
+                        </connections>
+                    </slider>
+                    <button toolTip="Calibrate CH1 (Set probe to 1X, attach to 2V generator)" verticalHuggingPriority="750" id="9gD-n3-5Iz">
+                        <rect key="frame" x="578" y="105" width="38" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="C" alternateTitle="Calibrate CH2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7FS-8y-shO">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <connections>
+                                <action selector="clickCalibrateCH2:" target="Voe-Tx-rLC" id="Ac6-JT-ZdE"/>
+                            </connections>
+                        </buttonCell>
+                    </button>
+                    <button toolTip="Calibrate CH1 (Set probe to 1X, attach to 2V generator)" verticalHuggingPriority="750" id="NkN-0Z-Nxo">
+                        <rect key="frame" x="578" y="223" width="38" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="C" alternateTitle="Calibrate CH1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vhz-NV-hkw">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clickCalibrateCH1:" target="Voe-Tx-rLC" id="124-Zy-Emt"/>
+                        </connections>
+                    </button>
+                    <button id="WDB-FV-OST">
+                        <rect key="frame" x="580" y="437" width="35" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="↘" bezelStyle="regularSquare" imagePosition="right" state="on" inset="2" id="i4D-Vo-0PJ">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -225,14 +255,6 @@
                             <action selector="checkOnDown:" target="Voe-Tx-rLC" id="G2n-eg-xad"/>
                         </connections>
                     </button>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWN-et-Uga">
-                        <rect key="frame" x="54" y="18" width="476" height="26"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" numberOfTickMarks="17" allowsTickMarkValuesOnly="YES" sliderType="linear" id="jaL-8j-4Qn"/>
-                        <connections>
-                            <action selector="moveTriggerOffset:" target="Voe-Tx-rLC" id="1iW-1e-NLk"/>
-                        </connections>
-                    </slider>
                 </subviews>
             </view>
         </window>
